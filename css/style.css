@@ -1,0 +1,250 @@
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 10px;  
+}
+
+.intro {
+    padding: 7.5px;
+    background-color: #5500ff;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.animacao-intro {
+    max-width: 600px; 
+    max-height: 600px;
+}
+
+.intro h1 {
+    margin: 7.5px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 36pt;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.intro h2 {
+    margin: 7.5px;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14pt;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.texto-intro .submit, .newsletter .submit {
+    margin: 15px;
+    padding: 7.5px;
+    min-width: 145px;
+    min-height: 40px;
+    max-height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: none;
+    background-color: #10ebb4;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16pt;
+    font-weight: bolder;
+    color: #5500ff; 
+    -webkit-appearance: none;
+}
+
+.submit:hover {
+    border: 1.5px solid #ffffff;
+    background-color: #5500ff;
+    color: #ffffff;
+    -webkit-appearance: none;
+
+}
+
+.produtos {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+.produtos .seta-carrossel {
+    max-width: 60px;
+    max-width: 60px;
+    max-height: 60px;
+    min-width: 60px;
+}
+
+.seta-carrossel {
+    margin-top: 25%;
+}
+
+.seta-carrossel:hover {
+    background-color: #10ebb4;
+}
+
+.img-produto {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.produtos-title, .sobre h1 {
+    margin: 15px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24pt;
+    font-weight: bold;
+    text-align: center;
+    color: #5500ff;
+}
+
+.produtos h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24pt;
+    font-weight: bold;
+    text-align: center;
+    color: #e900fe;
+
+}
+
+.produtos ul{
+    padding: 0;
+    list-style: none;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 12pt;
+}
+
+.produtos li {
+    margin: 10px;
+    font-weight: bold;
+}
+
+li::before {
+    content: "\2022";
+    color: #e900fe;
+    padding-right: 1em;
+}
+
+.produtos p, .sobre p {
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 12pt;
+    text-align: justify;
+
+}
+
+.oculto {
+    display: none;
+}
+
+.sobre {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #5500ff;
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter {
+    max-width: 80%;
+}
+
+.newsletter h1 {
+    padding-top: 15px;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24pt;
+    text-align: center;
+    color: #ffffff;
+}
+
+.newsletter h2, .redes h2 {
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 12pt;
+    text-align: center;
+    color: #ffffff;
+}
+
+.newsletter input {
+    margin: 7.5px;
+    min-width: 250px;
+    max-height: 25px;
+    min-height: 25px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes {
+    margin: 0;
+    background-color: #5500ff;
+}
+
+.icones {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.icone-medium, .icone-twitter, .icone-linkedin {
+    margin: 15px;
+}
+
+@media (max-width: 770px) {
+
+    .intro-mob {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .seta-carrossel {
+        display: none;
+    }
+
+    .newsletter .submit {
+        margin: 7.5px auto;
+        max-width: 150px;
+        min-height: 40px;   
+    }
+
+    .submit:active {
+        border: 1.5px solid #ffffff;
+        background-color: #5500ff;
+        color: #ffffff;
+    }
+
+    .img-produto {
+        max-width: 95%;
+    }
+
+    .produtos, .contato {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .produtos .seta-carrossel {
+        max-width: 20px;
+        max-height: 20px;
+        min-width: 20px;
+        max-width: 20px;
+    }
+}
