@@ -4,17 +4,17 @@ body {
 }
 
 .header {
-    background-color: #ffffff;
-    padding: 10px;  
+    padding: 10px; 
+    background-color: #ffffff;    
 }
 
 .intro {
-    padding: 7.5px;
-    background-color: #5500ff;
     max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 10px;
+    background-color: #5500ff;
 }
 
 .animacao-intro {
@@ -38,19 +38,19 @@ body {
     color: #ffffff;
 }
 
-.texto-intro .submit, .newsletter .submit {
+.texto-intro .submit, #entre-em-contato .submit {
     margin: 15px;
     padding: 7.5px;
     min-width: 145px;
     min-height: 40px;
     max-height: 40px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16pt;
+    font-weight: bolder;
     border-style: none;
     border-radius: 5px;
     box-shadow: none;
     background-color: #10ebb4;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 16pt;
-    font-weight: bolder;
     color: #5500ff; 
     -webkit-appearance: none;
 }
@@ -60,7 +60,6 @@ body {
     background-color: #5500ff;
     color: #ffffff;
     -webkit-appearance: none;
-
 }
 
 .produtos {
@@ -68,8 +67,6 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    justify-items: center;
 }
 
 .produtos .seta-carrossel {
@@ -83,19 +80,18 @@ body {
     margin-top: 25%;
 }
 
-.seta-carrossel:hover {
+.seta-carrossel:hover, .seta-carrossel:active {
     background-color: #10ebb4;
 }
 
 .img-produto {
-    max-width: 80%;
-    display: block;
+    max-width: 90%;
     margin: 0 auto;
+    display: block;
 }
 
-.produtos-title, .sobre h1 {
+.titulo-produtos, .sobre-a-empresa h1 {
     margin: 15px;
-    text-align: center;
     font-family: 'Work Sans', sans-serif;
     font-size: 24pt;
     font-weight: bold;
@@ -109,10 +105,9 @@ body {
     font-weight: bold;
     text-align: center;
     color: #e900fe;
-
 }
 
-.produtos ul{
+.produtos ul {
     padding: 0;
     list-style: none;
     font-family: 'Red Hat Text', sans-serif;
@@ -130,19 +125,18 @@ li::before {
     padding-right: 1em;
 }
 
-.produtos p, .sobre p {
+.produtos p, .sobre-a-empresa p {
     font-family: 'Red Hat Text', sans-serif;
     font-size: 12pt;
     text-align: justify;
-
 }
 
 .oculto {
     display: none;
 }
 
-.sobre {
-    max-width: 80%;
+.sobre-a-empresa {
+    max-width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -150,35 +144,34 @@ li::before {
 }
 
 .footer {
-    background-color: #5500ff;
-    width: fit-content;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #5500ff;
 }
 
-.newsletter {
+#entre-em-contato {
     max-width: 80%;
 }
 
-.newsletter h1 {
+#entre-em-contato h1 {
+    margin: 0 auto;
     padding-top: 15px;
-    margin: 0;
     font-family: 'Work Sans', sans-serif;
     font-size: 24pt;
     text-align: center;
     color: #ffffff;
 }
 
-.newsletter h2, .redes h2 {
+#entre-em-contato h2, .redes-sociais h2 {
     font-family: 'Red Hat Text', sans-serif;
     font-size: 12pt;
     text-align: center;
     color: #ffffff;
 }
 
-.newsletter input {
+#entre-em-contato input {
     margin: 7.5px;
     min-width: 250px;
     max-height: 25px;
@@ -187,15 +180,15 @@ li::before {
     border-radius: 5px;
 }
 
-.contato {
+.input-contato form {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.redes {
+.redes-sociais {
     margin: 0;
-    background-color: #5500ff;
+    background-color: transparent;
 }
 
 .icones {
@@ -205,13 +198,13 @@ li::before {
     align-items: flex-end;
 }
 
-.icone-medium, .icone-twitter, .icone-linkedin {
+.icone {
     margin: 15px;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 800px) {
 
-    .intro-mob {
+    .intro {
         max-width: 100%;
         flex-wrap: wrap;
     }
@@ -220,7 +213,11 @@ li::before {
         display: none;
     }
 
-    .newsletter .submit {
+    .sobre-a-empresa {
+        max-width: 80%;
+    }
+
+    #entre-em-contato .submit {
         margin: 7.5px auto;
         max-width: 150px;
         min-height: 40px;   
@@ -236,15 +233,9 @@ li::before {
         max-width: 95%;
     }
 
-    .produtos, .contato {
+    .produtos, .input-contato form {
         display: flex;
         flex-direction: column;
     }
 
-    .produtos .seta-carrossel {
-        max-width: 20px;
-        max-height: 20px;
-        min-width: 20px;
-        max-width: 20px;
-    }
 }

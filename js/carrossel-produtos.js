@@ -1,6 +1,6 @@
 (function () {
 
-    if (!window.matchMedia('(max-width: 770px)').matches) {
+    if (!window.matchMedia('(max-width: 800px)').matches) {
 
         var produtos = document.querySelectorAll('.produto');
 
